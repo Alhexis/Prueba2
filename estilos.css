@@ -1,0 +1,125 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: blue;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    box-shadow: 0px 5px 5px gray;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    display: inline-block;
+    border-right: 1px solid white;
+    color: white;
+    padding-right: 30px;
+    margin-left: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+li:hover{
+    padding-left: 20px;
+    color: aqua;
+    transition-duration: .5s;
+}
+
+.contenido h1{
+    color: blue;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.contenido{
+    text-align: center;
+}
+
+.contenido h1:hover{
+    color: red;
+    transform: scale(1.5);
+    transition-duration: 1s;
+}
+
+
+.card{
+    display: inline-block;
+    position: relative;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 2px solid blueviolet;
+    height: 160px;
+    width: 230px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 8px #a3a2a2;
+}
+
+.card:hover{
+    transform:scale(1.1);
+    transition-duration: 1s;
+    background-color: rgba(207, 139, 247, 0.658);
+    box-shadow: 2px 2px 2px #a3a2a2;
+}
+
+.titulo{
+    background-color:blueviolet;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid purple;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.cuerpo{
+    text-align:start;
+    padding-top: 15px;
+    padding-left: 5px;
+}
+
+@media screen and (max-width:650px) {
+    nav{
+        position: absolute;
+        background-color:rgba(137, 43, 266, 0.836);
+        width: 40%;
+        height: 96vh;
+        padding: 0;
+        box-shadow: 5px 5px 5px blueviolet;
+    }
+
+    li{
+        text-align: start;
+        display: block;
+        border: none;
+        padding: 8px 0;
+        border-bottom: 1px solid white;
+        padding: 20px;
+    }
+
+    li:hover{
+        margin: 0;
+        padding-left: 20px;
+        color: rgba(227, 175, 255);
+        transition-duration: .5s;
+    }
+
+    .card{
+        display: block;
+        position: static;
+        width: 100%;
+        border: 2px solid blue;
+    }
+
+    .titulo{
+        background-color: blue;
+        border: 2px solid blue;
+    }
+}
+    
